@@ -1,0 +1,207 @@
+@media screen and (max-width: 800px){
+  .section1{
+    justify-content: center;
+  }
+  .section1 a{
+    margin-bottom: 10px; 
+  }
+  .section1 img{
+    height: 120px;
+  }
+  .section1 span{
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .section1 h1{
+    font-size: 40px;
+  }
+  .section1 button {
+    margin-bottom: 80px;
+    margin-top: 40px;
+  }
+
+  .section2-container{
+    background-image: unset;
+  }
+  .section2{
+    align-items: center;
+    justify-content: center;
+  }
+  .section2 h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    max-width: 90%;
+  }
+  .section2 p {
+    font-size: 12px;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  header{
+    height: 60px;
+  }
+  .logo-container img{
+    height: 40px;
+  }
+  .header-inner{
+    height: 60px;
+    max-width: 90%;
+  }
+  .socials{
+    width: 80px;
+    margin-right: 20px;
+  }
+
+  .section3-container{
+    height: 200vh;
+  }
+  .section3{
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    max-width: 90%;
+    text-align: center;
+  }
+  .race-container{
+    padding: 10px;
+    margin-bottom: 30px;
+    align-self: center;
+  }
+  .wild-12k-props, .wild-20k-props{
+    padding: 15px;
+  }
+  .race-container p{
+    min-height: unset;
+    padding: 20px 0 40px 0;
+    margin: 0;
+  }
+  .wild-12k-icons div, .wild-20k-icons div{
+    flex-direction: column;
+  }
+  div.date img, div.money img{
+    margin-bottom: 20px;
+  }
+  div.date h4, div.money h4{
+    display: flex;
+    align-items: center;
+  }
+
+  .section4-container{
+    height: 60vh;
+    justify-content: space-around;
+  }
+  .section4-container h2{
+    font-size: 35px;
+    max-width: 90%;
+    text-align: center;
+  }
+  .section4 iframe {
+    width: 80%;
+    height: 90%;
+  }
+  .section4{
+    width: 90%;
+    height: 50%;
+  }
+
+  .section5{
+    align-items: center;
+    max-width: 100%;
+  }
+  .section5-container{
+    height: 200vh;
+    max-width: 100%;
+    background-image: none;
+  }
+  .section5-item{
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .section5 h3{
+    padding: 40px 0 20px 0;
+  }
+  .section5 > div{
+    margin: 20px 0;
+  }
+  .section5-item-text{
+    max-width: 90%;
+    margin-left: 0;
+  }
+  .section5-item-text p{
+    max-width: 90%;
+    margin: 10px auto;
+  }  
+  .section5-item img{
+    margin-top: 50px;
+  }
+
+  .section6{
+    max-width: 90%;
+    flex-direction: column;
+  }
+  .countdown{
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+  .countdown h2{
+    margin-top: 20px;
+    font-size: 58px;
+    line-height: 1;
+    padding: 0 20px;
+    border-right: none;
+    border-bottom: 1px solid white;
+  }
+  .countdown h2:last-child{
+    border-bottom: none;
+  }
+  .countdown span{
+    position: static;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .footer{
+    max-width: 90%;
+    flex-direction: column;
+  }
+  .footer-sponsors, .footer-links{
+    align-items: center;
+  }
+  .footer-links-links{
+    margin: 60px 0 30px 0;
+  }
+  .footer-links-links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-links-links a{
+    margin: 15px 0;
+  }
+  .footer-links-ask{
+    margin-top: 40px;
+  }
+  .footer-links-ask img{
+    margin: 0 10px 0 10px;
+  }
+  .footer-links-social{
+    margin: 20px 0;
+    justify-content: space-around;
+  }
+}
+
+
+/* Super small phones. Small adjustments */
+@media screen and (max-width:350px){
+  .section3-container{
+    height: 300vh;
+  }
+  .section5-container{
+    height: 250vh;
+  }
+  .footer-links-social{
+    justify-content: space-between;
+  }
+}

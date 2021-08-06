@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+/* 
+colors:
+#E60019 -> primary color (red)
+#151D51 -> background color (dark-blue)
+*/
+
+
+/* default styles */
+body{
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+h1{
+  font-size: 51px;
+  margin: 30px 0;
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 3px;
+}
+h2{
+  font-size: 56px;
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 3px;
+}
+h3{
+  font-size: 30px;
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 3px;
+}
+p{
+  font-size: 16px;
+  opacity: .9;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+a{
+  opacity: .9;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #E60019;
+  letter-spacing: 2px;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: none;
+}
+button:hover{
+  background-color: #e62f44;
+  cursor: pointer;
+}
+span{
+  font-size: 22px;
+  line-height: 2;
+}
+/* helper classes */
+.hidden{
+  display: none;
+}
+.opacityDown{
+  opacity: 0;
+}
+.opacityUp{
+  opacity: 1;
+}
+.addZ{
+  z-index: 1;
+}
+
+/* Sakriveni header */
+header{
+  position: fixed;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+}
+.header-inner{
+  flex-grow: 1;
+  max-width: 1200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-container img{
+  height: 80px;
+}
+.header-menu-container{
+  display: flex;
+  align-items: center;
+}
+.socials img {
+  height: 20px;
+}
+.socials{
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+.mini-button{
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+
+/* Sekcija 1 */
+.section1-container{
+  height: 100vh;
+}
+/* Menjajuca pozadina iza sekcije 1 */
+.backgrounds{
+  background-color: #000000;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.backgrounds div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: 500ms;
+}
+.backgrounds div:nth-child(1){
+  background-image: url("../assets/Fotka.png");
+  background-position: center;
+}
+.backgrounds div:nth-child(2){
+  background-position: center;
+  background-image: url("../assets/baner.png");
+}
+.backgrounds div:nth-child(3){
+  background-position: center;
+  background-image: url("../assets/runnning.jpg");
+  filter: grayscale(90%); 
+}
+/* Sadržaj sekcije1 */
+.section1{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+.section1 a{
+  margin-bottom: 50px; 
+}
+.section1 a img{
+  width: 290px;
+}
+.section1 button {
+  margin-bottom: 150px;
+  margin-top: 40px;
+}
+.slider-buttons{
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  margin-top: 40px;
+}
+.slider-buttons div{
+  padding: 8px;
+  border-radius: 10px;
+  background-color: white;
+  opacity: 0.5;
+}
+.slider-buttons div:nth-child(1){
+  opacity: 1;
+}
+
+
+/* Section2 */
+.section2-container {
+  background-color: #151D51;
+  background-image: url("../assets/climb-photo.png");
+  background-position: bottom right;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.section2{
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section2 > *{
+  max-width: 50%;
+}
+.see-more{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+.see-more a{
+  padding: 1px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+}
+.see-more img{
+  height: 15px;
+  margin-left: 20px;
+}
+
+
+/* Section3 */
+.section3-container{
+  background-image: url("../assets/trke-BG.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #0d194b;
+  height: 100vh;
+  width: 100%;
+}
+.section3{
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  grid-gap: 50px;
+}
+.race-container{
+  margin-bottom: 100px;
+  padding: 20px;
+}
+.race-container p{
+  min-height: 120px;
+  padding: 40px 0;
+}
+.wild-12k-svg, .wild-20k-svg{
+  border-bottom: 3px solid rgba(128, 128, 128, 0.486);
+  padding-bottom: 25px;
+}
+.wild-12k-props, .wild-20k-props{
+  border-bottom: 3px solid rgba(128, 128, 128, 0.486);
+  padding: 30px;
+  display: flex;
+}
+.wild-12k-props > *, .wild-20k-props > *{
+  flex-grow: 1;
+}
+.wild-12k-props span, .wild-20k-props span{
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.wild-12k-icons, .wild-20k-icons{
+  display: flex;
+  margin: 0 0 50px 0;
+}
+.wild-12k-icons div, .wild-20k-icons div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.wild-12k-icons div h4, .wild-20k-icons div h4{
+  flex-grow: 1;
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+.wild-12k-icons div img, .wild-20k-icons div img{
+  height: 30px;
+}
+
+/* Section4 */
+.section4-container{
+  height: 100vh;
+  width: 100%;
+  background-color: #151D51;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section4{
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("../assets/graph-element-1.svg"), url("../assets/graph-element.svg");
+  background-position: left, right;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: top left,bottom right;
+}
+.section4 iframe {
+  width: 80%;
+  height: 80%;
+}
+.section4 h2{
+  margin-bottom: 100px;
+}
+
+
+
+/* Sekcija 5 */
+.section5-container{
+  width: 100%;
+  height: 100vh;
+  background-color: #151D51;
+  background-image: url("../assets/prepreka1.png");
+  background-size: 40%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.section5{
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section5 > div{
+  margin: 50px 0;
+  display: flex;
+}
+.section5 h3{
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: unset;
+}
+.section5 p{
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 14px;
+  opacity: .8;
+}
+.section5 a{
+  text-decoration: underline;
+  opacity: .8;
+  font-weight: 300;
+  font-size: 14px;
+  padding-top: 20px;
+}
+.section5-item-text{
+  margin-left: 100px;
+  max-width: 30%;
+}
+.icon-container{
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section5-item:nth-child(1) img{
+  width: 158px;
+  height: 117px;
+}
+.section5-item:nth-child(2) img{
+  width: 219px;
+  height: 99px;
+}
+.section5-item:nth-child(3) img{
+  width: 98px;
+  height: 110px;
+}
+
+
+/* Sekcija 6 */
+.section6-container{
+  height: 850px;
+  width: 100%;
+  background-image: url("../assets/baner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section6{
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.section6 button {
+  margin-bottom: 100px;
+}
+.countdown{
+  display: flex;
+  margin-bottom: 130px;
+}
+.countdown h2{
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 76px;
+  line-height: 0.5;
+  letter-spacing: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  border-right: 1px solid white;
+}
+.countdown h2:last-child{
+  border-right: none;
+}
+.countdown span{
+  position: relative;
+  top: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+
+/* Futer */
+footer{
+  width: 100%;
+  background-color: #151D51;
+}
+.footer{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.footer-sponsors, .footer-links{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-sponsors-images{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer-sponsors-images img:nth-child(1){
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.footer-sponsors-images img:nth-child(2){
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.footer-sponsors-images img:nth-child(3){
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.footer-sponsors button{
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  padding: 10px 30px;
+  margin: 50px 0;
+}
+.footer-sponsors span{
+  margin: 60px 0;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.8;
+}
+
+.footer-links-links{
+  margin: 60px 0;
+}
+.footer-links-links a{
+  margin: 0 15px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.8;
+  border-bottom: 2px solid rgba(172, 172, 172, 0.479);
+}
+.footer-links-ask{
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+.footer-links-ask span{
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.8;
+}
+.footer-links-ask img{
+  height: 25px;
+  border-radius: 5px;
+  margin: 0 15px 0 60px;
+}
+.footer-links-ask a{
+  text-decoration: underline;
+}
+.footer-links-ask{
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(172, 172, 172, 0.479);
+}
+.footer-links-social{
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.footer-links button{
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  padding: 10px 30px;
+}
+
+@media screen and (max-height: 800px) and (min-width: 800px){
+  .section1{
+    margin-top: 30px;
+  }
+  .section1 img {
+    width: 300px;
+  }
+  .section1 a{
+    margin-bottom: 20px;
+  }
+  .section1 h1{
+    margin: 5px 0;
+  }
+  .section5-container{
+    height: 130vh;
+  }
+  .section3-container{
+    height: 100vh;
+  }
+}

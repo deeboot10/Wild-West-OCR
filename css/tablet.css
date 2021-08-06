@@ -1,0 +1,86 @@
+@media screen and (max-width: 1200px){
+  .section1{
+    justify-content: center;
+  }
+  .header-inner{
+    max-width: 80%;
+  }
+  .section2{
+    align-items: center;
+  }
+  .section2 p{
+    text-align: center;
+    font-size: 20px;
+  }
+  .section3-container {
+    height: 150vh;
+  }
+  .section3{
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    max-width: 90%;
+    text-align: center;
+  }
+  .race-container{
+    padding: 10px;
+    margin-bottom: 30px;
+    align-self: center;
+  }
+  .race-container p{
+    min-height: unset;
+    padding: 20px 0 40px 0;
+    margin: 0;
+  }
+  .wild-12k-icons div, .wild-20k-icons div{
+    flex-direction: column;
+  }
+  div.date img, div.money img{
+    margin-bottom: 20px;
+  }
+  div.date h4, div.money h4{
+    display: flex;
+    align-items: center;
+  }
+  .section4-container{
+    height: 60vh;
+    justify-content: space-around;
+  }
+  .section4-container h2{
+    font-size: 35px;
+    max-width: 90%;
+    text-align: center;
+  }
+  .section4 iframe {
+    width: 80%;
+    height: 90%;
+  }
+  .section4{
+    width: 90%;
+    height: 50%;
+  }
+  
+  .footer{
+    max-width: 80%;
+  }
+  .footer-links{
+    align-items: center;
+  }
+  .footer-links-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-links-links a{
+    margin-top: 20px;
+  }
+  .footer-links-ask{
+    margin-top: 20px;
+  }
+  .footer-links img{
+    margin-left: 30px;
+  }
+  .footer-links-social{
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+}
