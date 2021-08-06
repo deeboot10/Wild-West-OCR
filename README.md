@@ -2,4 +2,4 @@
 
 demo: https://deeboot10.github.io/Wild-West-OCR/ 
 
-original, published wersion: https://www.wildwest.rs/
+original, published version: https://www.wildwest.rs/
